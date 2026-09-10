@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Tải Tool A</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px auto; max-width: 800px; padding: 20px; }
+        h1 { color: #0056b3; }
+        .download-box { background: #e9ecef; padding: 20px; border-radius: 8px; text-align: center; margin: 30px 0; }
+        .download-btn { padding: 12px 25px; background: #007bff; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; font-weight: bold; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #6c757d; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">&larr; Quay lại Trang chủ</a>
+    
+    <h1>Hướng dẫn cài đặt & sử dụng Tool A</h1>
+    <p>Đây là bài viết chi tiết mô tả chức năng, cách cài đặt và hướng dẫn khắc phục lỗi cho Tool A...</p>
+    
+    <h3>Tính năng chính:</h3>
+    <ul>
+        <li>Tốc độ xử lý cực nhanh.</li>
+        <li>Giao diện dễ dùng, hoàn toàn miễn phí.</li>
+    </ul>
+
+    <div class="download-box">
+        <h3>Link Tải Xuống Phần Mềm</h3>
+        <!-- Thay link bên dưới bằng link Drive / Mega / GitHub Release của bạn -->
+        <a href="https://drive.google.com/file/d/xxxxxxx/view" target="_blank" class="download-btn">TẢI TOOL A (Google Drive)</a>
+    </div>
+</body>
+</html>
