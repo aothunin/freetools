@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hướng Dẫn Tải Tool A</title>
+    <title>Hướng Dẫn Tải Tool In hàng loạt</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px auto; max-width: 800px; padding: 20px; }
         h1 { color: #0056b3; }
@@ -15,19 +15,85 @@
 <body>
     <a href="index.html" class="back-link">&larr; Quay lại Trang chủ</a>
     
-    <h1>Hướng dẫn cài đặt & sử dụng Tool A</h1>
-    <p>Đây là bài viết chi tiết mô tả chức năng, cách cài đặt và hướng dẫn khắc phục lỗi cho Tool A...</p>
+    <h1>Hướng dẫn cài đặt & sử dụng Tool In hàng loạt</h1>
+    <p>Đây là bài viết chi tiết mô tả chức năng, cách cài đặt và hướng dẫn khắc phục lỗi cho Tool In hàng loạt: </p>
     
     <h3>Tính năng chính:</h3>
     <ul>
         <li>Tốc độ xử lý cực nhanh.</li>
-        <li>Giao diện dễ dùng, hoàn toàn miễn phí.</li>
+        <li>============================================================
+  IN HÀNG LOẠT - Công cụ in nhiều hồ sơ cùng lúc
+  Bản miễn phí - dùng cho Windows
+============================================================
+
+CHƯƠNG TRÌNH LÀM ĐƯỢC GÌ?
+------------------------------------------------------------
+- In hàng loạt file .docx, .xlsx/.xls và .pdf trong một thư mục.
+- Chọn máy in, số bản in, in 1 mặt / 2 mặt (lật xuôi hoặc lật ngược).
+- In màu hoặc trắng đen.
+- Chọn phạm vi trang: in tất cả, hoặc từ trang X đến trang Y.
+  Có thể đặt riêng phạm vi trang cho từng file ở màn hình xem trước.
+- Tạm dừng giữa chừng và in tiếp từ đúng chỗ đang dừng.
+
+
+CÁCH DÙNG (3 bước)
+------------------------------------------------------------
+1. Giải nén toàn bộ file ZIP ra một thư mục.
+
+2. Mở thư mục vừa giải nén, bấm đúp vào file:  InHangLoat.exe
+
+3. Chọn thư mục chứa hồ sơ -> chọn máy in -> đặt số bản,
+   in 2 mặt, màu/trắng đen, phạm vi trang -> bấm In.
+
+
+LẦN ĐẦU MỞ BỊ WINDOWS CẢNH BÁO (NẾU CÓ)?
+------------------------------------------------------------
+Windows hiện bảng xanh "Windows protected your PC" là do file
+chưa mua chứng thư số, KHÔNG phải virus.
+
+Cách mở: bấm "More info" (Thông tin thêm)
+         -> bấm "Run anyway" (Vẫn chạy).
+
+Nếu phần mềm diệt virus xóa mất file: mở phần mềm diệt virus,
+vào mục Quarantine/Cách ly, chọn Restore và thêm thư mục này
+vào danh sách loại trừ (Exclusion).
+
+
+MÁY CẦN CÓ GÌ?
+------------------------------------------------------------
+- Windows 10 hoặc 11 (64-bit).
+- Muốn in file Word (.doc/.docx): máy phải có Microsoft Word.
+- Muốn in file Excel (.xls/.xlsx): máy phải có Microsoft Excel.
+- File PDF: in được ngay, không cần cài gì thêm.
+  Nếu muốn chỉnh số bản in / in 2 mặt / trắng đen cho file PDF,
+  hãy tải SumatraPDF bản Portable 64-bit tại sumatrapdfreader.org,
+  đổi tên file thành SumatraPDF.exe rồi chép vào cùng thư mục
+  với InHangLoat.exe (nếu bản tải về đã có sẵn thì bỏ qua bước này).
+
+
+LỖI CÓ THỂ GẶP
+------------------------------------------------------------
+- Danh sách máy in hiện dòng "(THIẾU pywin32 ...)":
+  bản tải về bị thiếu file. Hãy xóa thư mục cũ, tải lại file ZIP
+  và giải nén lại toàn bộ.
+
+- In file Word/Excel báo lỗi: đóng hết cửa sổ Word/Excel đang mở
+  rồi thử lại. Bản web hoặc WPS Office không dùng được.
+
+- In ra bị lệch, sai khổ giấy: kiểm tra lại cài đặt mặc định
+  của máy in trong Control Panel > Devices and Printers.
+
+
+Công cụ miễn phí, không thu phí, không quảng cáo.
+Bạn có thể chia sẻ lại cho người khác.
+============================================================
+.</li>
     </ul>
 
     <div class="download-box">
         <h3>Link Tải Xuống Phần Mềm</h3>
         <!-- Thay link bên dưới bằng link Drive / Mega / GitHub Release của bạn -->
-        <a href="https://drive.google.com/file/d/xxxxxxx/view" target="_blank" class="download-btn">TẢI TOOL A (Google Drive)</a>
+        <a href="https://drive.google.com/file/d/1KsSgdQ_Iofp5JvxyL5aGemfxqzVjd0E1/view?usp=sharing" target="_blank" class="download-btn">TẢI TOOL In giấy tờ hàng loạt (Google Drive)</a>
     </div>
 </body>
 </html>
