@@ -7,10 +7,25 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f9; color: #333; }
         h1 { text-align: center; color: #0056b3; }
-        .tool-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        
+        /* Cấu hình hiển thị 3 cột trên 1 dòng */
+        .tool-list { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px; 
+            margin-top: 30px; 
+        }
+
+        /* Tự động chuyển thành 1 cột khi xem trên điện thoại */
+        @media (max-width: 768px) {
+            .tool-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .tool-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
         .tool-card h3 { margin-top: 0; }
-        .btn { display: inline-block; padding: 10px 15px; background: #28a745; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        .btn { display: inline-block; padding: 10px 15px; background: #28a745; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; word-break: break-all; }
         .btn:hover { background: #218838; }
     </style>
 </head>
@@ -39,7 +54,7 @@
             <p>Hỗ trợ tự động đổi tên file hàng loạt.</p>
             <a href="https://aothunin.github.io/freetools/doitenfile.html" class="btn">Xem Hướng Dẫn & Tải</a>
         </div>
-        <br>
+
         <!-- Card Tool 4 -->
         <div class="tool-card">
             <h3>Tool Chuyển đổi word/excel sang PDF hàng loạt</h3>
@@ -63,7 +78,7 @@
             <a href="https://aothunin.github.io/freetools/TachGopExcel-online.html" class="btn">Dùng Online</a>
             <a href="https://aothunin.github.io/freetools/tachgopexcelfile.html" class="btn">Tải về dùng Offline</a>
         </div>
-        <br>
+
         <!-- Thông tin liên hệ -->
         <div class="tool-card">
             <h3>Liên hệ hỗ trợ</h3>
