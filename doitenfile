@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Tải Tool Đổi Tên File Hàng Loạt</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px auto; max-width: 800px; padding: 20px; }
+        h1 { color: #0056b3; }
+        .download-box { background: #e9ecef; padding: 20px; border-radius: 8px; text-align: center; margin: 30px 0; }
+        .download-btn { padding: 12px 25px; background: #007bff; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; font-weight: bold; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #6c757d; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">&larr; Quay lại Trang chủ</a>
+    
+    <h1>Hướng dẫn cài đặt & sử dụng Tool Đổi Tên File hàng loạt</h1>
+    <p>Đây là bài viết chi tiết mô tả chức năng, cách sử dụng và hướng dẫn khắc phục lỗi cho Tool Đổi Tên File hàng loạt: </p>
+    
+    <h3>CHƯƠNG TRÌNH LÀM ĐƯỢC GÌ?</h3>
+
+    <h4>Đổi tên file hàng loạt theo quy tắc:</h4>
+    <ul>
+        <li>Thêm chữ vào đầu/cuối tên file.</li>
+        <li>Tìm và thay chữ, bỏ dấu tiếng Việt, đổi HOA/thường.</li>
+        <li>Đánh số thứ tự, xóa ký tự đặc biệt, thay khoảng trắng.</li>
+    </ul>
+    <h4>Đổi tên theo BẢNG EXCEL đối chiếu:</h4>
+    <ul>
+        <li>Cột A tên cũ, cột B tên mới. </li>
+        <li>Hợp với việc đổi tên file scan theo số quyết định, mã hồ sơ.</li>
+    </ul>
+    <h4>LUÔN xem trước trước khi đổi, và HOÀN TÁC được sau khi đổi.</h4>
+
+
+    <h3>CÁCH DÙNG ( 3 bước)</h3>
+    <il>
+        <li>Giải nén file ZIP ra một thư mục, bấm đúp DoiTenHangLoat.exe (phải giải nén trước khi chạy).</li>
+
+        <li>BƯỚC 1: chọn thư mục chứa file. Có thể lọc theo đuôi file (gõ: pdf, docx) và chọn có lấy cả thư mục con hay không.</li>
+
+        <li>BƯỚC 2: chọn một trong hai cách:</li>
+      <ul>
+        <li>Cách 1 "Theo quy tắc": tích/gõ các ô cần dùng.</li>
+        <li>Cách 2 "Theo bảng Excel": chọn file Excel đối chiếu.</li>
+      </ul>
+        <li>BƯỚC 3: bấm XEM TRƯỚC. Nhìn kỹ cột "Tên sau khi đổi". Ưng ý rồi mới bấm ĐỔI TÊN THẬT.</li>
+    </il>
+
+    <h3>YÊN TÂM VỀ HOÀN TÁC</h3>
+
+    <p>Mỗi lần đổi tên, chương trình ghi một file nhật ký nhỏ tên _hoan_tac_doi_ten.json trong chính thư mục đó. Bấm nút "Hoàn tác lần đổi gần nhất" là mọi file trở lại tên cũ. </p>
+
+    <p>Lưu ý: chỉ hoàn tác được LẦN ĐỔI GẦN NHẤT, và đừng xóa hay di chuyển file nhật ký đó nếu còn muốn hoàn tác.</p>
+
+    <h3>NHỮNG ĐIỀU CẦN BIẾT</h3>
+    <ul>
+        <li>Nếu tên mới bị trùng nhau, chương trình tự thêm _2, _3 nên không bao giờ ghi đè mất file.</li>
+        <li>Các ký tự Windows cấm đặt tên file  < > : " / \ | ? * sẽ tự đổi thành dấu gạch dưới.</li>
+        <li>File đang mở trong Word/Excel sẽ không đổi tên được. Hãy đóng file rồi thử lại.</li>
+        <li>Chương trình không đổi tên thư mục, chỉ đổi tên file.</li>
+    </ul>
+
+    <h3>LẦN ĐẦU MỞ BỊ WINDOWS CẢNH BÁO? Cửa sổ "Windows protected your PC" hiện ra thì Bấm "More info" -> "Run anyway".</h3>
+    
+    <h4>Công cụ miễn phí, không thu phí, không quảng cáo.</h4>
+    <h4>Bạn có thể chia sẻ lại cho người khác.</h4>
+
+    <div class="download-box">
+        <h3>Link Tải Xuống Phần Mềm</h3>
+        <!-- Thay link bên dưới bằng link Drive / Mega / GitHub Release của bạn -->
+        <a href="https://drive.google.com/file/d/11KtokugJ-_-JYDG3xGCkyUuN-NbCUKcd/view?usp=sharing" target="_blank" class="download-btn">TẢI TOOL ĐỂ DÙNG OFFLINE (Google Drive)</a>
+    </div>
+</body>
+</html>
