@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hướng dẫn sử dụng công cụ Tách và Gộp Excel: tách một bảng thành nhiều file theo phòng ban, gộp nhiều file về một bảng và kiểm tra lệch cấu trúc. Chạy thẳng trên trình duyệt, không cần cài đặt.">
+    <title>Hướng Dẫn Dùng Công Cụ Tách &amp; Gộp Excel</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px auto; max-width: 800px; padding: 20px; }
+        h1 { color: #0056b3; }
+        .download-box { background: #e9ecef; padding: 20px; border-radius: 8px; text-align: center; margin: 30px 0; }
+        .download-btn { padding: 12px 25px; background: #007bff; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; font-weight: bold; }
+        .download-btn.phu { background: #ffffff; color: #007bff; border: 2px solid #007bff; margin-left: 8px; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #6c757d; text-decoration: none; }
+        .note { background: #e7f5ec; border-left: 4px solid #28a745; padding: 12px 16px; margin: 20px 0; }
+        code { background: #f1f3f5; padding: 2px 6px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">&larr; Quay lại Trang chủ</a>
+
+    <h1>Hướng dẫn sử dụng công cụ Tách &amp; Gộp Excel</h1>
+    <p>Đây là bài viết chi tiết mô tả chức năng, cách sử dụng và hướng dẫn khắc phục lỗi cho công cụ Tách &amp; Gộp Excel:</p>
+
+    <div class="note">
+        <b>Công cụ này KHÔNG cần cài đặt.</b> Nó chạy thẳng trong trình duyệt (Chrome, Edge, Cốc Cốc
+        đều được), nên không có cảnh báo virus, không phải giải nén, dùng được cả trên máy Mac và
+        điện thoại. File của bạn được xử lý ngay trong máy bạn — trang này không gửi file đi đâu cả.
+    </div>
+
+    <h3>CHƯƠNG TRÌNH LÀM ĐƯỢC GÌ?</h3>
+
+    <h4>Tách một bảng thành nhiều file:</h4>
+    <ul>
+        <li>Một bảng 2.000 dòng dữ liệu của 12 phòng ban &rarr; <b>12 file riêng</b> trong vài giây,
+            đóng gói sẵn thành một file ZIP để gửi đi.</li>
+        <li>Chọn cột để tách (ví dụ cột "Phòng ban"), đặt mẫu tên file
+            (ví dụ <code>Phong_{giá trị}</code>).</li>
+        <li>Xem trước sẽ ra bao nhiêu file, mỗi file bao nhiêu dòng, rồi mới tải về.</li>
+    </ul>
+
+    <h4>Gộp nhiều file về một bảng:</h4>
+    <ul>
+        <li>Cuối tuần nhận về 12 file đã sửa &rarr; gộp lại thành một bảng.</li>
+        <li>Ghép theo <b>TÊN CỘT</b> chứ không theo vị trí, nên phòng nào tự đổi thứ tự cột
+            hay thêm cột vẫn ghép đúng.</li>
+        <li>Báo rõ <b>trước khi gộp</b>: file nào thiếu cột, file nào có cột lạ, file nào rỗng —
+            để bạn phát hiện sai sót trước, không phải sau.</li>
+    </ul>
+
+    <h3>CÁCH DÙNG — TÁCH FILE (4 bước)</h3>
+    <ol>
+        <li>Kéo file Excel vào ô ở tab "Tách file".</li>
+        <li>Chọn sheet, cho biết dòng tiêu đề nằm ở dòng mấy, chọn cột muốn tách theo.</li>
+        <li>Bấm <b>Xem trước</b> để thấy sẽ ra bao nhiêu file, mỗi file bao nhiêu dòng.</li>
+        <li>Bấm <b>Tách và tải về</b> — trình duyệt tải xuống một file ZIP chứa toàn bộ file con.</li>
+    </ol>
+
+    <h3>CÁCH DÙNG — GỘP FILE (4 bước)</h3>
+    <ol>
+        <li>Kéo tất cả các file cần gộp vào ô ở tab "Gộp file" (chọn nhiều file cùng lúc được).</li>
+        <li>Cho biết dòng tiêu đề nằm ở dòng mấy.</li>
+        <li>Bấm <b>Kiểm tra cấu trúc</b> — đọc kỹ phần cảnh báo màu vàng nếu có.</li>
+        <li>Bấm <b>Gộp và tải về</b>.</li>
+    </ol>
+
+    <h3>NHỮNG ĐIỀU CẦN BIẾT</h3>
+    <ul>
+        <li><b>Dữ liệu không rời khỏi máy bạn.</b> Toàn bộ xử lý chạy bằng trình duyệt trên máy tính
+            của bạn — bạn có thể ngắt mạng rồi dùng vẫn chạy bình thường.</li>
+        <li>File kết quả giữ <b>số liệu</b>, không giữ <b>công thức</b> và không giữ
+            <b>màu sắc, độ rộng cột</b>. Số vẫn là số và ngày vẫn là ngày, nên SUM và lọc theo ngày
+            vẫn chạy bình thường.</li>
+        <li>File trên khoảng 50.000 dòng có thể làm trình duyệt chậm vài chục giây.
+            Cứ chờ, đừng đóng tab.</li>
+        <li>File <code>.xls</code> đời cũ vẫn đọc được. Nếu gặp file lỗi, cách chữa nhanh nhất là
+            mở bằng Excel rồi lưu lại thành <code>.xlsx</code>.</li>
+        <li>Muốn dùng khi không có mạng: bấm <b>Ctrl+S</b> lưu trang về máy, sau đó mở file đã lưu
+            là dùng được.</li>
+    </ul>
+
+    <h3>HAY GẶP</h3>
+    <ul>
+        <li><b>Không thấy tên cột trong danh sách</b>: kiểm tra lại số "dòng tiêu đề". Nếu file có
+            dòng tiêu đề lớn ở trên cùng thì tiêu đề thật thường nằm ở dòng 2.</li>
+        <li><b>Tách ra quá nhiều file</b>: bạn đang chọn nhầm cột (ví dụ chọn cột Họ tên thì mỗi
+            người thành một file). Xem lại phần Xem trước trước khi tải.</li>
+        <li><b>Gộp xong thấy nhiều ô trống</b>: các file nguồn không thống nhất tên cột. Phần
+            "Kiểm tra cấu trúc" có liệt kê file nào thiếu cột gì.</li>
+    </ul>
+
+    <h4>Công cụ miễn phí, không thu phí, không quảng cáo.</h4>
+    <h4>Bạn có thể chia sẻ lại cho người khác.</h4>
+
+    <div class="download-box">
+        <h3>Dùng công cụ</h3>
+        <!-- Đổi đường dẫn bên dưới nếu file đặt ở thư mục khác -->
+        <a href="TachGopExcel.html" class="download-btn">MỞ CÔNG CỤ NGAY (không cần tải)</a>
+        <a href="TachGopExcel.html" download class="download-btn phu">Tải về dùng offline</a>
+    </div>
+</body>
+</html>

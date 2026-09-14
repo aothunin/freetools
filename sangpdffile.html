@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hướng dẫn sử dụng Tool Word/Excel sang PDF hàng loạt: chuyển cả thư mục sang PDF bằng chính Office trên máy, không vỡ font tiếng Việt, file không rời khỏi máy bạn.">
+    <title>Hướng Dẫn Tải Tool Word / Excel sang PDF Hàng Loạt</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px auto; max-width: 800px; padding: 20px; }
+        h1 { color: #0056b3; }
+        .download-box { background: #e9ecef; padding: 20px; border-radius: 8px; text-align: center; margin: 30px 0; }
+        .download-btn { padding: 12px 25px; background: #007bff; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; font-weight: bold; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #6c757d; text-decoration: none; }
+        .note { background: #e7f5ec; border-left: 4px solid #28a745; padding: 12px 16px; margin: 20px 0; }
+        code { background: #f1f3f5; padding: 2px 6px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">&larr; Quay lại Trang chủ</a>
+
+    <h1>Hướng dẫn cài đặt &amp; sử dụng Tool Word / Excel sang PDF hàng loạt</h1>
+    <p>Đây là bài viết chi tiết mô tả chức năng, cách sử dụng và hướng dẫn khắc phục lỗi cho Tool Word / Excel sang PDF hàng loạt:</p>
+
+    <h3>CHƯƠNG TRÌNH LÀM ĐƯỢC GÌ?</h3>
+    <p>Chuyển cả một thư mục file Word, Excel (và PowerPoint nếu muốn) sang PDF chỉ bằng một lần bấm.</p>
+
+    <h4>Điểm khác với các web chuyển đổi trên mạng:</h4>
+    <ul>
+        <li><b>File KHÔNG rời khỏi máy bạn.</b> Hợp đồng, hồ sơ nhân sự, số liệu nội bộ không bị
+            tải lên máy chủ của ai cả.</li>
+        <li><b>Dùng chính Microsoft Office trên máy</b> nên PDF ra giống hệt bản in:
+            không vỡ font tiếng Việt, không lệch bảng.</li>
+    </ul>
+
+    <div class="note">
+        Đây là lý do đáng để cài một phần mềm nhỏ thay vì mở web: với hồ sơ có thông tin khách hàng,
+        lương thưởng hay số liệu nội bộ, việc tải file lên một trang web lạ là điều nhiều cơ quan
+        không cho phép.
+    </div>
+
+    <h3>CÁCH DÙNG (4 bước)</h3>
+    <ol>
+        <li>Giải nén file ZIP ra một thư mục, bấm đúp <b>SangPDF.exe</b> (phải giải nén trước khi chạy).</li>
+        <li><b>BƯỚC 1</b>: chọn thư mục chứa file. Tích loại file cần lấy (Word / Excel / PowerPoint),
+            chọn có lấy cả thư mục con hay không.</li>
+        <li><b>BƯỚC 2</b>: chọn nơi lưu PDF — để cạnh file gốc, hoặc vào một thư mục riêng
+            (khi đó có thể giữ nguyên cấu trúc thư mục con).</li>
+        <li>Xem danh sách bên dưới cho đúng rồi bấm <b>BẮT ĐẦU CHUYỂN</b>.
+            Mỗi file mất khoảng 1 đến 3 giây.</li>
+    </ol>
+
+    <h3>MÁY CẦN CÓ GÌ?</h3>
+    <ul>
+        <li>Windows 10 hoặc 11 (64-bit). <b>Không cần cài Python.</b></li>
+        <li><b>PHẢI có Microsoft Office bản cài đặt trên máy:</b>
+            <ul>
+                <li>file Word &rarr; cần Microsoft Word</li>
+                <li>file Excel &rarr; cần Microsoft Excel</li>
+                <li>file PowerPoint &rarr; cần Microsoft PowerPoint</li>
+            </ul>
+        </li>
+        <li><b>WPS Office hoặc Office bản web KHÔNG dùng được.</b>
+            Chương trình tự kiểm tra và báo cho bạn biết ngay khi mở.</li>
+    </ul>
+
+    <h3>MẸO DÙNG</h3>
+    <ul>
+        <li><b>"Bỏ qua file đã có PDF"</b>: bật sẵn. Nhờ đó nếu đang chạy dở bị ngắt,
+            lần sau chạy lại sẽ tiếp tục chứ không làm lại từ đầu.</li>
+        <li>Riêng Excel có tùy chọn <b>"ép vừa 1 trang ngang"</b> — dùng khi bảng rộng bị cắt mất
+            cột bên phải.</li>
+        <li>Trong lúc chạy, <b>đừng mở Word/Excel làm việc khác</b>, dễ gây xung đột. Cứ để máy chạy.</li>
+    </ul>
+
+    <h3>HAY GẶP</h3>
+    <ul>
+        <li><b>"Không mở được Microsoft Office"</b>: máy chưa có Office bản cài đặt, hoặc đang có
+            cửa sổ Word/Excel bị treo. Đóng hết Word/Excel (kể cả trong Task Manager) rồi thử lại.</li>
+        <li><b>Một vài file báo lỗi, còn lại chạy bình thường</b>: file đó có thể đang mở, bị khóa,
+            hoặc hỏng. Xem phần nhật ký để biết file nào.</li>
+        <li><b>PDF ra bị thiếu cột (file Excel)</b>: bật <code>ép vừa 1 trang ngang</code> rồi chạy lại.</li>
+    </ul>
+
+    <h3>LẦN ĐẦU MỞ BỊ WINDOWS CẢNH BÁO? Cửa sổ "Windows protected your PC" hiện ra thì Bấm "More info" -&gt; "Run anyway".</h3>
+    <p>Bảng xanh đó là do file chưa mua chứng thư số, KHÔNG phải virus.</p>
+
+    <h4>Công cụ miễn phí, không thu phí, không quảng cáo.</h4>
+    <h4>Bạn có thể chia sẻ lại cho người khác.</h4>
+
+    <div class="download-box">
+        <h3>Link Tải Xuống Phần Mềm</h3>
+        <!-- Thay link bên dưới bằng link Drive / Mega / GitHub Release của bạn -->
+        <a href="#" target="_blank" class="download-btn">TẢI TOOL ĐỂ DÙNG OFFLINE (Google Drive)</a>
+    </div>
+</body>
+</html>

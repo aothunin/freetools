@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hướng dẫn sử dụng Tool Trộn Thư Ra File Riêng: một danh sách Excel + một mẫu Word cho ra hàng loạt file riêng từng người, tên file tự đặt, xuất Word hoặc PDF.">
+    <title>Hướng Dẫn Tải Tool Trộn Thư Ra File Riêng</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px auto; max-width: 800px; padding: 20px; }
+        h1 { color: #0056b3; }
+        .download-box { background: #e9ecef; padding: 20px; border-radius: 8px; text-align: center; margin: 30px 0; }
+        .download-btn { padding: 12px 25px; background: #007bff; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; font-weight: bold; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #6c757d; text-decoration: none; }
+        table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+        th, td { border: 1px solid #ced4da; padding: 8px 10px; text-align: left; }
+        th { background: #f1f3f5; }
+        code { background: #f1f3f5; padding: 2px 6px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">&larr; Quay lại Trang chủ</a>
+
+    <h1>Hướng dẫn cài đặt &amp; sử dụng Tool Trộn Thư Ra File Riêng</h1>
+    <p>Đây là bài viết chi tiết mô tả chức năng, cách sử dụng và hướng dẫn khắc phục lỗi cho Tool Trộn Thư Ra File Riêng:</p>
+
+    <h3>CHƯƠNG TRÌNH LÀM ĐƯỢC GÌ?</h3>
+
+    <p>Mail Merge (trộn thư) có sẵn của Word chỉ cho ra <b>MỘT file dài</b> gộp tất cả mọi người.
+    Công cụ này cho ra <b>file RIÊNG cho từng người</b>, tên file đặt tự động theo dữ liệu
+    (ví dụ: <code>NV001_Nguyen Van A.docx</code>), và xuất thẳng ra PDF nếu bạn muốn.</p>
+
+    <h4>Hợp với các loại văn bản:</h4>
+    <ul>
+        <li>Quyết định, giấy mời, thông báo gửi từng người.</li>
+        <li>Hợp đồng mẫu, phiếu lương, giấy chứng nhận.</li>
+        <li>Bất cứ văn bản nào cùng một mẫu nhưng khác nội dung từng người.</li>
+    </ul>
+
+    <h4>Những tiện ích thêm:</h4>
+    <ul>
+        <li><b>Đọc số thành chữ tiếng Việt</b> cho dòng "bằng chữ" trong quyết định, hợp đồng, phiếu chi.</li>
+        <li><b>Định dạng ngày kiểu hành chính</b>: "ngày 05 tháng 09 năm 2026".</li>
+        <li>Lọc dòng theo điều kiện — chỉ làm những người thuộc một phòng ban chẳng hạn.</li>
+        <li>Xem trước danh sách tên file trước khi chạy.</li>
+        <li>Tên file trùng nhau thì tự thêm <code>_2</code>, không bao giờ ghi đè mất file.</li>
+    </ul>
+
+    <h3>CÁCH DÙNG (4 bước)</h3>
+    <ol>
+        <li>Giải nén file ZIP ra một thư mục, bấm đúp <b>TronThu.exe</b> (phải giải nén trước khi chạy).</li>
+        <li><b>BƯỚC 1</b>: chọn file Excel danh sách. Cho biết dòng tiêu đề nằm ở dòng số mấy
+            (thường là 1; nếu file có dòng tiêu đề lớn ở trên thì là 2).</li>
+        <li><b>BƯỚC 2</b>: chọn mẫu Word. Nếu chưa có mẫu, bấm nút
+            <b>"Tạo mẫu sẵn từ danh sách cột"</b> — chương trình sinh ra một file Word mẫu có sẵn
+            tên các trường, bạn mở ra soạn lại nội dung theo ý mình.</li>
+        <li><b>BƯỚC 3</b>: chọn thư mục lưu, chọn cách đặt tên file, chọn Word hay PDF,
+            rồi bấm <b>BẮT ĐẦU TẠO FILE</b>.</li>
+    </ol>
+
+    <h3>CÁCH VIẾT TRƯỜNG TRONG MẪU WORD</h3>
+
+    <p>Trong file Word, chỗ nào cần điền dữ liệu thì gõ hai ngoặc nhọn kèm <b>đúng tên cột</b> trong Excel:</p>
+
+    <table>
+        <tr><th>Gõ trong mẫu Word</th><th>Kết quả trong file tạo ra</th></tr>
+        <tr><td><code>{{Họ và tên}}</code></td><td>Nguyễn Văn An</td></tr>
+        <tr><td><code>{{Phòng ban:hoa}}</code></td><td>KỸ THUẬT</td></tr>
+        <tr><td><code>{{Lương}}</code></td><td>12.500.000</td></tr>
+        <tr><td><code>{{Lương:chữ}}</code></td><td>Mười hai triệu năm trăm nghìn</td></tr>
+        <tr><td><code>{{Ngày ký:ngày}}</code></td><td>ngày 05 tháng 09 năm 2026</td></tr>
+        <tr><td><code>{{Lương:thô}}</code></td><td>12500000 (giữ nguyên như trong Excel)</td></tr>
+    </table>
+
+    <p><b>Lưu ý:</b> tên trong hai ngoặc phải viết <b>giống hệt tiêu đề cột</b> trong Excel
+    (không cần đúng chữ hoa/thường). Bấm nút <b>"Kiểm tra trường trong mẫu"</b> để chương trình
+    soát giúp bạn — đây là lỗi hay gặp nhất, và nếu không soát thì file tạo ra vẫn còn nguyên
+    chữ <code>{{...}}</code>.</p>
+
+    <p>Trường đặt được ở mọi chỗ: thân bài, trong bảng, đầu trang, chân trang.
+    Định dạng chữ (in đậm, cỡ chữ, màu) được giữ nguyên.</p>
+
+    <h3>ĐẶT TÊN FILE KẾT QUẢ</h3>
+    <p>Ô "Đặt tên file theo" dùng cùng cách viết đó:</p>
+    <ul>
+        <li><code>{{Mã NV}}_{{Họ và tên}}</code> &rarr; <code>NV001_Nguyen Van An.docx</code></li>
+        <li><code>QD_{stt}</code> &rarr; <code>QD_1.docx</code>, <code>QD_2.docx</code> ...</li>
+    </ul>
+
+    <h3>MÁY CẦN CÓ GÌ?</h3>
+    <ul>
+        <li>Windows 10 hoặc 11 (64-bit). <b>Không cần cài Python.</b></li>
+        <li>Xuất file Word (.docx): <b>KHÔNG cần</b> cài Microsoft Word.</li>
+        <li>Xuất PDF: máy <b>PHẢI có Microsoft Word bản cài đặt</b>
+            (WPS Office hoặc Word bản web không dùng được).</li>
+        <li>Mẫu phải là file <code>.docx</code>. File <code>.doc</code> đời cũ hãy mở bằng Word rồi
+            lưu lại thành <code>.docx</code>.</li>
+    </ul>
+
+    <h3>NHỮNG ĐIỀU CẦN BIẾT</h3>
+    <ul>
+        <li><b>Trường đặt trong ô văn bản (Text Box) không thay được.</b> Thân bài, bảng,
+            đầu trang và chân trang thì được. Nếu mẫu của bạn dùng Text Box, hãy chuyển nội dung
+            đó ra ngoài.</li>
+        <li>Xuất PDF chạy chậm hơn vì mỗi file phải qua Microsoft Word — khoảng 1 đến 3 giây một file.
+            Cứ để máy làm việc.</li>
+        <li>Trong lúc chạy, nên đóng các cửa sổ Word đang mở để tránh xung đột.</li>
+    </ul>
+
+    <h3>HAY GẶP</h3>
+    <ul>
+        <li><b>File kết quả vẫn còn chữ <code>{{Tên gì đó}}</code></b>: tên cột viết sai chính tả
+            so với Excel. Bấm "Kiểm tra trường trong mẫu" để biết sai ở đâu.</li>
+        <li><b>Xuất PDF báo lỗi</b>: đóng hết cửa sổ Word đang mở rồi thử lại. Hoặc chọn Word (.docx)
+            rồi tự chuyển sang PDF sau.</li>
+        <li><b>Không ghi được file</b>: thư mục đang mở file trong Word, hoặc thư mục không cho ghi.
+            Hãy chọn thư mục khác trong Documents.</li>
+    </ul>
+
+    <h3>LẦN ĐẦU MỞ BỊ WINDOWS CẢNH BÁO? Cửa sổ "Windows protected your PC" hiện ra thì Bấm "More info" -&gt; "Run anyway".</h3>
+
+    <h4>Công cụ miễn phí, không thu phí, không quảng cáo.</h4>
+    <h4>Bạn có thể chia sẻ lại cho người khác.</h4>
+
+    <div class="download-box">
+        <h3>Link Tải Xuống Phần Mềm</h3>
+        <!-- Thay link bên dưới bằng link Drive / Mega / GitHub Release của bạn -->
+        <a href="#" target="_blank" class="download-btn">TẢI TOOL ĐỂ DÙNG OFFLINE (Google Drive)</a>
+    </div>
+</body>
+</html>
